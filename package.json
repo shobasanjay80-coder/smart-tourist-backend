@@ -1,0 +1,23 @@
+{
+  "name": "smarttourist-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@mapbox/polyline": "^1.2.1",
+    "@turf/turf": "^7.3.1",
+    "axios": "^1.13.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "lowdb": "^6.1.1",
+    "nanoid": "^4.0.0",
+    "polyline": "^0.2.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

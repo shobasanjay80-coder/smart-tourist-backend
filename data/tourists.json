@@ -1,0 +1,4 @@
+[
+  { "id": "1", "digitalId": "DIGI12345", "name": "Sanjay", "phone": "9876543210", "itinerary": "trip to ooty", "emergency_no": "8610398969" },
+  { "id": "2", "digitalId": "DIGI54321", "name": "Bob", "phone": "9123456780", "itinerary": "Museum Visit" }
+]
