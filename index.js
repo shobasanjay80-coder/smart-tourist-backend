@@ -27,6 +27,8 @@ app.use('/api/highrisk', highRiskRoutes);
 app.use('/api/sos', sosRoutes);
 app.use('/api/route', routeOsrmRoutes);
 app.use('/api', poiRoutes);
+app.use("/api", require("./routes/aiSafety"));
+
 
 // Root endpoint
 app.get('/', (req, res) => {
