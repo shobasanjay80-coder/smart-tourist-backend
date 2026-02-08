@@ -12,6 +12,7 @@
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "google-auth-library": "^10.5.0",
     "lowdb": "^6.1.1",
     "nanoid": "^4.0.0",
     "polyline": "^0.2.0"
