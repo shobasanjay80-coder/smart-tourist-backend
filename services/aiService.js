@@ -1,29 +1,24 @@
-const OpenAI = require("openai");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_KEY,
-});
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_KEY);
 
 exports.askAI = async (city, weather) => {
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
   const prompt = `
 User wants to travel to ${city}.
 
 Weather:
 Temperature: ${weather.temp}°C
 Condition: ${weather.condition}
-Wind: ${weather.wind} m/s
+Wind: ${weather.wind}
 Visibility: ${weather.visibility}
 
-Is it safe to travel? Give short advice.
+Tell in simple words if it is safe to travel.
 `;
 
-  const completion = await openai.chat.completions.create({
-    model: "gpt-4o-mini",
-    messages: [
-      { role: "system", content: "You are a travel safety expert." },
-      { role: "user", content: prompt },
-    ],
-  });
+  const result = await model.generateContent(prompt);
+  const response = await result.response;
 
-  return completion.choices[0].message.content;
+  return response.text();
 };
