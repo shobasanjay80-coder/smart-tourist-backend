@@ -1,8 +1,7 @@
 [
   { "name": "Zone A", "lat": 11.7633, "lng": 79.7372, "radius": 500, "risk": 90 },
   { "name": "Zone B", "lat": 11.9217, "lng": 79.6107, "radius": 500, "risk": 85 },
-  { "name": "Zone C", "lat": 11.6425, "lng": 79.6875, "radius": 500, "risk": 90 },
-  { "name": "Zone D", "lat": 11.6285, "lng": 79.6285, "radius": 700, "risk": 86},
+
   { "name": "Zone E", "lat": 11.9217, "lng": 79.6107, "radius": 500, "risk": 72 },
   { "name": "Zone F", "lat": 11.9192, "lng": 79.6097, "radius": 700, "risk": 98 }
 
