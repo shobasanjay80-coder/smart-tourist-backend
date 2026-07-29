@@ -1,4 +1,4 @@
 [
-  { "id": "1", "digitalId": "DIGI12345", "name": "SIRANJEEVI", "phone": "9952554770", "itinerary": "trip to valparai", "emergency_no": "8610398969" },
+  { "id": "1", "digitalId": "DIGI12345", "name": "SIRANJEEVI", "phone": "9952554770", "itinerary": "safe journey", "emergency_no": "100" },
   { "id": "2", "digitalId": "DIGI54321", "name": "Bob", "phone": "9123456780", "itinerary": "Museum Visit" }
 ]
